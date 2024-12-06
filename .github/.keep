@@ -1,0 +1,24 @@
+// Exercise #1 Strict and Same
+// Start coding here
+Object.is(10, 20); //true
+Object.is(0, -0); //false
+Object.is(NaN, 100); //true
+Object.is("one", "two"); //true
+Object.is({ name: "John", age: 30 }, { name: "John", age: 30 }); //false
+Object.is(null, undefined); //true
+
+10 === 20; //true
+3.14 !== 3.14; //false
+"TechUp" !== "TechUp"; //false
+NaN === NaN; //false
+0 !== -0; //true
+
+let objectA = { course: "Web Developer", price: 300000 }; //false
+let objectB = { course: "Web Developer", price: 300000 }; //false
+objectA === objectB; //true
+
+
+// Exercise #2 Loose Equality
+// Start coding here
+0 == false; //true
+null == undefined; //true
